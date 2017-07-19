@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+        <array key="Courier.ttc">
+            <string>Courier</string>
+            <string>Courier-Oblique</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="howOldAmI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cIm-Ce-A9x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" identifier="id1" id="1Zd-a2-WBz"/>
+                                    <constraint firstAttribute="width" constant="375" identifier="id2" id="LZg-rB-Z9R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Old Am I ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-H6-OeD">
+                                <rect key="frame" x="0.0" y="36" width="375" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" identifier="id3" id="LZf-D0-2qT"/>
+                                    <constraint firstAttribute="height" constant="48" identifier="id4" id="mJK-Xy-YdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Birthday is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOb-Y1-Gc6">
+                                <rect key="frame" x="0.0" y="118" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" identifier="id5" id="A9c-ht-BxE"/>
+                                    <constraint firstAttribute="height" constant="30" identifier="id6" id="AVc-l9-ROf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbV-aI-sSo">
+                                <rect key="frame" x="0.0" y="176" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" identifier="id7" id="KXM-gO-FRK"/>
+                                    <constraint firstAttribute="width" constant="375" identifier="id8" id="fji-WV-1n9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZiW-Xx-b1R"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Time" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ON-QB-GLW">
+                                <rect key="frame" x="0.0" y="225" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" identifier="id9" id="Ajy-UW-7az"/>
+                                    <constraint firstAttribute="width" constant="375" identifier="id10" id="erZ-A0-AXb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="timeTextEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LYZ-GE-Rpp"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Are:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sx9-vP-ZMt">
+                                <rect key="frame" x="0.0" y="493" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" identifier="id11" id="7Oj-Gy-6Z3"/>
+                                    <constraint firstAttribute="height" constant="30" identifier="id12" id="i6l-wq-7e7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Option Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HG-tK-uzm">
+                                <rect key="frame" x="0.0" y="531" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" identifier="id13" id="Ep7-3q-yR3"/>
+                                    <constraint firstAttribute="width" constant="375" identifier="id14" id="ga7-cC-NZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Date Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqe-dp-r9M">
+                                <rect key="frame" x="0.0" y="618" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" identifier="id15" id="MKB-MU-Mse"/>
+                                    <constraint firstAttribute="height" constant="30" identifier="id16" id="tTG-2z-McA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With Your Birthday Being:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnx-VQ-QLq">
+                                <rect key="frame" x="0.0" y="580" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" identifier="id17" id="goN-uI-7ZP"/>
+                                    <constraint firstAttribute="width" constant="375" identifier="id18" id="nTJ-57-esJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kie-Rb-Tmc">
+                                <rect key="frame" x="0.0" y="255" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" identifier="id19" id="WdB-t6-SGx"/>
+                                    <constraint firstAttribute="height" constant="216" identifier="id20" id="kfm-se-9dq"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sx9-vP-ZMt" firstAttribute="top" secondItem="kie-Rb-Tmc" secondAttribute="bottom" constant="22" identifier="id40" id="3FB-5u-qs1"/>
+                            <constraint firstAttribute="trailing" secondItem="Ggg-H6-OeD" secondAttribute="trailing" identifier="id24" id="5H7-T0-eHc"/>
+                            <constraint firstAttribute="trailing" secondItem="6HG-tK-uzm" secondAttribute="trailing" identifier="id43" id="7Xl-RR-Sfw"/>
+                            <constraint firstItem="rnx-VQ-QLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id47" id="8mN-k3-IIM"/>
+                            <constraint firstItem="kie-Rb-Tmc" firstAttribute="top" secondItem="2ON-QB-GLW" secondAttribute="bottom" identifier="id37" id="92m-xU-Z30"/>
+                            <constraint firstAttribute="trailing" secondItem="FbV-aI-sSo" secondAttribute="trailing" identifier="id31" id="9H3-wO-uG8"/>
+                            <constraint firstItem="2ON-QB-GLW" firstAttribute="top" secondItem="FbV-aI-sSo" secondAttribute="bottom" constant="19" identifier="id34" id="9hJ-hw-pJD"/>
+                            <constraint firstItem="FbV-aI-sSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id32" id="A0N-MK-mGR"/>
+                            <constraint firstAttribute="trailing" secondItem="sx9-vP-ZMt" secondAttribute="trailing" identifier="id41" id="AN2-AF-Q2R"/>
+                            <constraint firstItem="FbV-aI-sSo" firstAttribute="top" secondItem="xOb-Y1-Gc6" secondAttribute="bottom" constant="28" identifier="id33" id="BKM-5k-YAW"/>
+                            <constraint firstItem="6HG-tK-uzm" firstAttribute="top" secondItem="sx9-vP-ZMt" secondAttribute="bottom" constant="8" identifier="id44" id="CVo-w7-Ipq"/>
+                            <constraint firstItem="2ON-QB-GLW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id35" id="Ey7-OB-Cf9"/>
+                            <constraint firstItem="kie-Rb-Tmc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id38" id="HVp-rg-qap"/>
+                            <constraint firstAttribute="trailing" secondItem="rnx-VQ-QLq" secondAttribute="trailing" identifier="id48" id="Iui-PE-tKQ"/>
+                            <constraint firstItem="rnx-VQ-QLq" firstAttribute="top" secondItem="6HG-tK-uzm" secondAttribute="bottom" constant="19" identifier="id49" id="J6N-5j-6fT"/>
+                            <constraint firstItem="xOb-Y1-Gc6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id27" id="NCa-da-7gf"/>
+                            <constraint firstAttribute="trailing" secondItem="oqe-dp-r9M" secondAttribute="trailing" identifier="id51" id="PRP-qe-3qV"/>
+                            <constraint firstAttribute="trailing" secondItem="xOb-Y1-Gc6" secondAttribute="trailing" identifier="id28" id="QFj-4O-JA9"/>
+                            <constraint firstItem="rnx-VQ-QLq" firstAttribute="top" secondItem="6HG-tK-uzm" secondAttribute="bottom" constant="19" identifier="id50" id="R0U-gV-QAN"/>
+                            <constraint firstItem="oqe-dp-r9M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id52" id="TIB-VN-UvF"/>
+                            <constraint firstItem="xOb-Y1-Gc6" firstAttribute="top" secondItem="Ggg-H6-OeD" secondAttribute="bottom" constant="34" identifier="id29" id="UZi-8f-g7y"/>
+                            <constraint firstAttribute="trailing" secondItem="kie-Rb-Tmc" secondAttribute="trailing" identifier="id39" id="Wv9-k9-Qne"/>
+                            <constraint firstItem="Ggg-H6-OeD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" identifier="id25" id="Y0O-rQ-T9f"/>
+                            <constraint firstItem="sx9-vP-ZMt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id42" id="Ypf-8d-W4V"/>
+                            <constraint firstItem="xOb-Y1-Gc6" firstAttribute="top" secondItem="Ggg-H6-OeD" secondAttribute="bottom" constant="34" identifier="id30" id="blg-WA-Abr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cIm-Ce-A9x" secondAttribute="bottom" id="dSc-sp-aBL"/>
+                            <constraint firstItem="cIm-Ce-A9x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" identifier="id21" id="fI1-Rq-2HW"/>
+                            <constraint firstItem="6HG-tK-uzm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id45" id="fKY-DH-1cr"/>
+                            <constraint firstItem="Ggg-H6-OeD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id26" id="goo-ck-PiZ"/>
+                            <constraint firstItem="cIm-Ce-A9x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" identifier="id22" id="qrW-Zn-cr0"/>
+                            <constraint firstItem="6HG-tK-uzm" firstAttribute="top" secondItem="sx9-vP-ZMt" secondAttribute="bottom" constant="8" identifier="id46" id="rOl-H3-OG9"/>
+                            <constraint firstAttribute="trailing" secondItem="cIm-Ce-A9x" secondAttribute="trailing" identifier="id23" id="sE3-o1-40b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oqe-dp-r9M" secondAttribute="bottom" constant="19" id="tnO-uj-6qp"/>
+                            <constraint firstItem="oqe-dp-r9M" firstAttribute="top" secondItem="rnx-VQ-QLq" secondAttribute="bottom" constant="8" id="ttS-Ab-UNQ"/>
+                            <constraint firstAttribute="trailing" secondItem="2ON-QB-GLW" secondAttribute="trailing" identifier="id36" id="wBc-mK-gAC"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="hourDateField" destination="2ON-QB-GLW" id="aOe-pA-MNg"/>
+                        <outlet property="imageBackground" destination="cIm-Ce-A9x" id="3hR-9j-X3H"/>
+                        <outlet property="outputLabelFour" destination="oqe-dp-r9M" id="PF1-ov-bnG"/>
+                        <outlet property="outputLabelOne" destination="sx9-vP-ZMt" id="TGL-mI-GPC"/>
+                        <outlet property="outputLabelThree" destination="rnx-VQ-QLq" id="8g1-Ud-Tch"/>
+                        <outlet property="outputLabelTwo" destination="6HG-tK-uzm" id="c4c-fz-fbp"/>
+                        <outlet property="pickerView" destination="kie-Rb-Tmc" id="8mr-Do-4Xi"/>
+                        <outlet property="textDateField" destination="FbV-aI-sSo" id="8Mo-s6-O5j"/>
+                        <outlet property="titleLabel" destination="Ggg-H6-OeD" id="qfa-oW-5db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wallpaper.jpg" width="744" height="1392"/>
+    </resources>
+</document>
